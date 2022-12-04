@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["plugin:react/recommended", "next/core-web-vitals"],
+  "plugins": ["react"],
+  "rules": {
+    "semi": "error",
+    "prefer-const": "error"
+  }
 }

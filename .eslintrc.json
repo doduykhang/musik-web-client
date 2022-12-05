@@ -3,6 +3,7 @@
   "plugins": ["react"],
   "rules": {
     "semi": "error",
-    "prefer-const": "error"
+    "prefer-const": "error",
+    "@next/next/no-img-element": "off"
   }
 }

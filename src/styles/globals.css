@@ -3,45 +3,60 @@
 @tailwind utilities;
 
 @layer utilities {
-  .flex-center {	
-	  @apply flex justify-center items-center
-  }
+	.flex-center {
+		@apply flex justify-center items-center;
+	}
 }
 
 @layer components {
-  .primary-button {	
-	  @apply bg-primary text-white px-2 py-1 rounded-sm
-  }
+	.btn-primary {
+		@apply bg-primary text-white;
+	}
 
-  .transparent-button {	
-	  @apply bg-transparent text-white px-2 py-1 rounded-sm border-white border-2
-  }
+	.btn-secondary {
+		@apply bg-white text-black;
+	}
+
+	.btn-secondary.btn-outline {
+		@apply bg-transparent text-white border-white border;
+	}
+
+	.btn-sm {
+		@apply px-2 py-1 text-sm;
+	}
+
+	.btn-md {
+		@apply px-4 py-2 text-md;
+	}
+
+	.btn-small {
+		@apply px-8 py-2 text-lg;
+	}
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+	html {
+		color-scheme: dark;
+	}
+	body {
+		color: white;
+		background: black;
+	}
 }
-
